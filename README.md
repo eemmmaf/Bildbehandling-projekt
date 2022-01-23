@@ -12,7 +12,7 @@ Detta repo innehåller:
 För att föra över alla filer har kommandoprompten använts. Först användes kommandot **git init** för att skapa ett repository i den valda katalogen. Sedan skapades en README-fil i Visual Studio Code. Efter det användes kommandot **git add .**. Det gjorde att alla filer i katalogen hamnade i Staging area. För att kontrollera statusen användes kommandot **git status**. Sedan gjordes en commit och en kommentar skrevs. Sedan fördes alla filer till denna repository genom att använda kommandot **git branch-M main** och slutligen kommandot **git push -u origin main**. 
 
 ### Klona detta repository
-Om ni vill klona detta repository använder ni kommandot **git clone** och använder länken https://github.com/eemmmaf/Bildbehandling-projekt.git. 
+Om ni vill klona detta repository använder ni kommandot **git clone** och använder länken https://github.com/eemmmaf/Bildbehandling-projekt.git.  Skriv såhär:  git clone https://github.com/eemmmaf/Bildbehandling-projekt.git
 
 Tack för att ni kollade! 
 
