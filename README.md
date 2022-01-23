@@ -8,3 +8,4 @@ Detta repo innehåller:
 * 1 CSS-dokument
 * 1 JavaScript-dokument
 
+## Hur jag har gått tillväga
