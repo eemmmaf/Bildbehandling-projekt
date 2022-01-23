@@ -14,7 +14,7 @@ För att föra över alla filer har kommandoprompten använts. Först användes 
 ### Klona detta repository
 Om ni vill klona detta repository använder ni kommandot **git clone** och använder länken https://github.com/eemmmaf/Bildbehandling-projekt.git.
 
-Skriv såhär i kommandoprompten:  git clone https://github.com/eemmmaf/Bildbehandling-projekt.git
+Kopiera texten och klistra in i kommandoprompten:  git clone https://github.com/eemmmaf/Bildbehandling-projekt.git
 
 Tack för att ni kollade! 
 
