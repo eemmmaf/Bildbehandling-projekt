@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!--Lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <!--Faviconer-->
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+
+
+  <title>Emmas Beauty</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <!--Reklammeddelande längst upp-->
+    <div class="reklam"><span>30% Rea på hela sortimentet med rabattkoden Sale30!</span></div>
+
+
+    <!--Navigering för skärmar upp till 700px-->
+    <nav class="mobile-nav">
+      <a href="index.html"> <img src="Logga.svg" class="logo" alt="logotyp" width="163" height="40"></a>
+      <button class="hamburger-icon" id="hamburger-icon"><i class="fas fa-bars"></i></button>
+
+      <ul class="nav-ul" id="nav-ul">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Varukorg -->
+      <div class="cart"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+
+      <!-- Sökruta -->
+      <div class="search">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!--Navigering för desktop-->
+    <nav class="desktop-nav">
+      <a href="index.html"> <img src="Logga.svg" class="logo-desktop" alt="logotyp" width="163" height="40"></a>
+      <ul class="desktop-ul">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Sökruta -->
+      <div class="search-desktop">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <!-- Varukorg -->
+      <div class="cart-desktop"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+    </nav>
+  </header>
+
+
+
+  <!--Main-->
+  <main>
+    <section class="product-section">
+      <div class="product-flex">
+        <div>
+          <h1>Fleurs de l'Himalaya
+            eau de parfum</h1>
+
+          <!--Jquery och Lightbox-->
+          <!--Stora bilden och picture-tagg-->
+          <a href="images/fleurs-600.png" data-lightbox="fleurs" data-title="Fleurs de l´Himalaya">
+            <picture>
+              <source srcset="images/fleurs-600.avif" type="image/avif">
+              <source srcset="images/fleurs-600.webp" type=image/webp>
+              <img class="product-img" id="product-img" src="images/fleurs-600.png"
+                alt="Rituals parfym. En rosa, fyrkantig flaska" width="600" height="600">
+            </picture>
+          </a>
+          <!--En liten bild-->
+          <div class="flex-images">
+            <span class="jquery-img">
+              <a href="images/fleurs.jpg" data-lightbox="fleurs" data-title="Fleurs de l´Himalaya">
+                <img src="images/fleurs-100.jpg" alt="Rosafärgad produkt i en glasflaska" width="100" height="100"></a>
+            </span>
+          </div>
+        </div>
+
+        <!--Beskrivning av produkt-->
+        <div class="description">
+          <h2>Beskrivning</h2>
+          <p>Den här utsökta parfymen från Valley of Flowers målar ett porträtt av en svag vind som sveper genom det
+            stillsamma landskapet i Himalayabergen i det heliga Tibet. Den intensiva doften av vilda orkidéer smälter
+            ansträngningslöst samman med sofistikerad Himalaya-pion och avrundas med en diskret doft av bomullsmysk. Låt
+            dig inspireras av denna unika parfym som långsamt utvecklar sin förtrollande doft.<br><br>
+            Text från Rituals.se.</p>
+          <h3>Storlek:</h3>
+          <p>50ml</p>
+          <h3>Pris:</h3>
+          <p>465kr</p>
+          <!--Selectboxen. Ingen funktionalitet-->
+          <div class="select-antal">
+            <label for="antal">Antal:</label>
+            <select name="antal" id="antal">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+            </select>
+          </div>
+          <!--Knapp för att lägga till i varukorgen-->
+          <button class="add-to-basket"
+            onclick="addToBasket(this , '02', 'Fleurs de l´Himalaya', 465 , 'images/fleurs-100.png', true )">Lägg
+            till
+            i varukorg</button>
+          <!--Varukorg-->
+          <div class="basket-holder">
+            <h2>Min varukorg</h2>
+            <p>Antal produkter: </p>
+            <ul id="basket">
+              <li>Varukorgen är tom</li>
+            </ul>
+            <a href="cart.html">Gå till kassan</a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+  </main>
+
+
+
+  <!--Footer-->
+  <footer class="main-footer">
+    <div>
+      <h2>Länkar</h2>
+      <ul>
+        <li><a href="about.html">Om Emmas Beauty</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="cart.html">Varukorgen</a></li>
+      </ul><br>
+    </div>
+
+    <div>
+      <h2>Kontakta oss</h2>
+      <a href="mailto:emfo2102@student.miun.se"><i
+          class="far fa-envelope fa-lg"></i><br>emfo2102@student.miun.se</a><br><br><br>
+      <br><i class="fas fa-phone-alt fa-2x"></i>
+      <p>076 101 54 74</p>
+    </div>
+  </footer>
+  <footer class="secondary-footer"><span>Emma Forslund, emfo2102@student.miun.se</span></footer>
+
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!--Lightbox-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!--Main.js-->
+  <script src="main.js"></script>
+
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/95698cec21.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--Slut på dokumentet-->

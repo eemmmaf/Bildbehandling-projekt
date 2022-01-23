@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> 
+  <!--Lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <!--Faviconer-->
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  <title>Emmas Beauty</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <!--Reklammeddelande längst upp-->
+    <div class="reklam"><span>30% Rea på hela sortimentet med rabattkoden Sale30!</span></div>
+
+
+    <!--Navigering för skärmar upp till 700px-->
+    <nav class="mobile-nav">
+        <a href="index.html"> <img src="Logga.svg" class="logo" alt="logotyp" width="163" height="40"></a>
+      <button class="hamburger-icon" id="hamburger-icon"><i class="fas fa-bars"></i></button>
+
+      <ul class="nav-ul" id="nav-ul">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Varukorg -->
+      <div class="cart"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+
+      <!-- Sökruta -->
+      <div class="search">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!--Navigering för desktop-->
+    <nav class="desktop-nav">
+      <a href="index.html"> <img src="Logga.svg" class="logo-desktop" alt="logotyp"></a>
+      <ul class="desktop-ul">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Sökruta -->
+      <div class="search-desktop">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <!-- Varukorg -->
+      <div class="cart-desktop"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+    </nav>
+  </header>
+
+
+  <!--Main-->
+  <main>
+    <section class="product-section">
+      <div class="product-flex">
+        <div>
+        <h1>Marc Jacobs Perfect Eau de Parfum 50 ml</h1>
+
+        <!--Jquery och Lightbox-->
+        <!--Stora bilden-->
+          <a href="images/perfect-600.png" data-lightbox="perfect" data-title="Marc Jacobs Perfect">
+            <picture>
+              <source srcset="images/perfect-600.avif" type="image/avif">
+              <source srcset="images/perfect-600.webp" type=image/webp>
+          <img class="product-img" id="product-img" src="images/perfect-600.png" alt="Marc Jacobs parfym" width="600"
+            height="600"></picture>
+          </a>
+            <!--Två små bilder-->
+            <div class="flex-images">
+              <span class="jquery-img">
+                <a href="images/mj-600.png" data-lightbox="perfect" data-title="Marc Jacobs Perfect">
+                <img src="images/mj-100.png" alt="Rosafärgad produkt i en glasflaska" width="100" height="100"></a>
+                </span>
+                <!--Andra bilden-->
+              <span class="jquery-img">
+                <a href="images/jacobs-600.png" data-lightbox="perfect" data-title="Marc Jacobs Perfect">
+                <img src="images/jacobs-100.png" alt="Rosafärgad produkt i en glasflaska" width="100" height="100"></a>
+                </span>
+        </div>
+      </div>
+
+<!--Beskrivning av produkt-->
+        <div class="description">
+<h2>Beskrivning</h2>
+        <p><strong>Modern, ljus och feminin.</strong> Upptäck Marc Jacobs nya doft Perfect Eau de Parfum, en lekfull och
+          beroendeframkallande blommig doft skapad av parfymören Domitille Michalon-Bertier. Perfect är en hyllning till
+          dig själv, till självacceptans och originalitet. Liksom tatueringen på Marc Jacobs handled ”perfect” så
+          förespråkar doften - du är perfekt precis som du är. <br><br>
+        Text från Kicks.se</p>
+          <h3>Storlek:</h3>
+          <p>50ml</p>
+        <h3>Pris:</h3>
+        <p>700kr</p>
+         <!--Selectboxen. Ingen funktionalitet-->
+         <div class="select-antal">
+          <label for="antal">Antal:</label>
+          <select name="antal" id="antal">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+          </select>
+        </div>
+        <!--Knapp för att lägga till i varukorgen-->
+        <button class="add-to-basket"
+          onclick="addToBasket(this , '01', 'Marc Jacobs', 700 , 'images/perfect-100.png', true )">Lägg
+          till
+          i varukorg</button>
+           <!--Varukorg-->
+      <div class="basket-holder">
+        <h2>Min varukorg</h2>
+        <p>Antal produkter: </p>
+        <ul id="basket">
+          <li>Varukorgen är tom</li>
+        </ul>
+        <a href="cart.html">Gå till kassan</a>
+      </div>
+        </div>
+      </div>
+      <div id="video">
+        <h3>Video på produkten</h3>
+        <video controls>
+          <source src="images/videoperfect.mp4" type="video/mp4">
+          Din webbläsare stödjer inte detta format
+        </video>
+        </div>
+
+     
+    </section>
+  </main>
+
+
+  <!--Footer-->
+  <footer class="main-footer">
+    <div>
+      <h2>Länkar</h2>
+      <ul>
+        <li><a href="about.html">Om Emmas Beauty</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="cart.html">Varukorgen</a></li>
+      </ul><br>
+    </div>
+
+    <div>
+      <h2>Kontakta oss</h2>
+      <a href="mailto:emfo2102@student.miun.se"><i
+          class="far fa-envelope fa-lg"></i><br>emfo2102@student.miun.se</a><br><br><br>
+      <br><i class="fas fa-phone-alt fa-2x"></i>
+      <p>076 101 54 74</p>
+    </div>
+  </footer>
+  <footer class="secondary-footer"><span>Emma Forslund, emfo2102@student.miun.se</span></footer>
+
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <!--Lightbox-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<!--Main-JS-->
+  <script src="main.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/95698cec21.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--Slut på dokumentet-->

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--Faviconer-->
+    <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <title>Emmas Beauty</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--Reklammeddelande längst upp-->
+        <div class="reklam"><span>30% Rea på hela sortimentet med rabattkoden Sale30!</span></div>
+
+        <!--Navigering för skärmar upp till 700px-->
+        <nav class="mobile-nav">
+            <a href="index.html"> <img src="Logga.svg" class="logo" alt="logotyp" width="163" height="40"></a>
+            <button class="hamburger-icon" id="hamburger-icon"><i class="fas fa-bars"></i></button>
+
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="about.html">Om oss</a></li>
+            </ul>
+            <!-- Varukorg -->
+            <div class="cart"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+
+            <!-- Sökruta -->
+            <div class="search">
+                <input type="text" placeholder="sök" class="search-bar">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!--Navigering för desktop-->
+        <nav class="desktop-nav">
+            <a href="index.html"> <img src="Logga.svg" class="logo-desktop" alt="logotyp" width="163" height="40"></a>
+            <ul class="desktop-ul">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="about.html">Om Emmas Beauty</a></li>
+            </ul>
+            <!-- Sökruta -->
+            <div class="search-desktop">
+                <input type="text" placeholder="sök" class="search-bar">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <!-- Varukorg -->
+            <div class="cart-desktop"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Slut på header och huvudinnehåll börjar-->
+        <section id="cart-section">
+            <h1>Kassa</h1>
+            <div class="cart-flex">
+                <div class="vara-flex">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Bild</td>
+                                <td>Artikelnummer</td>
+                                <td>Varunamn</td>
+                                <td>Antal</td>
+                                <td>Pris</td>
+                            </tr>
+                        </thead>
+                        <tbody id="checkout"></tbody>
+                    </table>
+
+                    <button onclick="emptyBasket()" id="empty-basket">Töm varukorgen</button>
+                </div>
+
+                <div class="pay-flex">
+                    <h2>Betala</h2>
+                    <fieldset>
+                        <form>
+                            <!--Namn-->
+                            <button type="button" class="collapsible">Ange ditt namn <i
+                                    class="fas fa-chevron-down"></i></button>
+                            <div class="content">
+                                <label for="name">Ditt namn:</label>
+                                <input type="text" name="name" value="" id="name" size="40" />
+                            </div>
+                            <!--Rabattkod--> <button type="button" class="collapsible">Ange presentkort/rabattkod <i
+                                    class="fas fa-chevron-down"></i></button>
+                            <div class="content">
+                                <label for="presentkort">Presentkort/rabattkod:</label>
+                                <input type="text" name="payment" value="" id="presentkort" size="40" />
+
+                            </div>
+                            <!--Namn-->
+                            <button type="button" class="collapsible">Ange adress: <i
+                                    class="fas fa-chevron-down"></i></button>
+                            <div class="content">
+                                <label for="name">Din adress:</label>
+                                <input type="text" name="adress" value="" id="adress" size="40" />
+                            </div>
+                            <!--Postnummer och e-post--> <button type="button" class="collapsible">Ange postnummer och
+                                e-post<i class="fas fa-chevron-down"></i></button>
+                            <div class="content">
+                                <label for="postal">Ange postnummer:</label> <input type="text" name="postal" value=""
+                                    size="40" id="postal" /> <label for="email">Ange epost:</label> <input type="text"
+                                    name="email" value="" size="40" id="email" />
+
+                            </div>
+                            <!--Betalsätt--> <button type="button" class="collapsible">Välj betalsätt<i
+                                    class="fas fa-chevron-down"></i></button>
+                            <div class="content">
+                                <div id="radio-form"> <input type="radio" id="visa" name="visa" value="visa"> <label
+                                        for="visa">Visa</label><br>
+                                    <hr> <input type="radio" id="swish" name="swish" value="swish"> <label
+                                        for="swish">Swish</label><br>
+                                    <hr> <input type="radio" id="paypal" name="paypal" value="paypal"> <label
+                                        for="paypal">Paypal</label><br>
+                                    <hr> <input type="radio" id="faktura" name="faktura" value="faktura"> <label
+                                        for="faktura">Faktura</label>
+                                </div>
+                            </div>
+                            <button id="buy-button" onclick="checkoutBasket()">Slutför köp</button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--Footer-->
+    <footer class="main-footer">
+        <div>
+            <h2>Länkar</h2>
+            <ul>
+                <li><a href="about.html">Om Emmas Beauty</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="cart.html">Varukorgen</a></li>
+            </ul><br>
+        </div>
+
+        <div>
+            <h2>Kontakta oss</h2>
+            <a href="mailto:emfo2102@student.miun.se"><i
+                    class="far fa-envelope fa-lg"></i><br>emfo2102@student.miun.se</a><br><br><br>
+            <br><i class="fas fa-phone-alt fa-2x"></i>
+            <p>076 101 54 74</p>
+        </div>
+    </footer>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/95698cec21.js" crossorigin="anonymous"></script>
+    <!--Main-Js-->
+    <script src="main.js"></script>
+    <footer class="secondary-footer"><span>Emma Forslund, emfo2102@student.miun.se</span></footer>
+</body>
+
+</html>
+<!--Slut på dokumentet-->

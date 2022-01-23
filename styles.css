@@ -1,0 +1,860 @@
+/*Från Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10 pixlar*/
+    background-color: #f7e8f5;
+}
+
+main{
+    width:100%;
+    max-width:1500px;
+    margin:auto;
+    display: block;
+}
+body {
+    margin:0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.2rem;
+    line-height:1.8;
+}
+
+h2{
+    font-size: 2.4rem;
+    line-height: 1.8;
+
+}
+
+h3{
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+h4{
+    font-size:1.8rem;
+    line-height: 1.8;
+
+}
+
+p {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top:0.3rem;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+}
+table{
+    padding-left:2rem;
+}
+
+.active-link{
+    font-weight: bold;
+}
+
+#header-img img{
+    margin:auto;
+    display:block;
+}
+#new{
+    position:absolute;
+    top:20%;
+    left:10%;
+}
+#new a{
+    color:black;
+}
+
+.desktop-nav{
+    display:none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+nav {
+    background-color: #262325;
+    position:relative;
+    padding:1rem;
+    z-index:2;
+}
+
+
+a {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+li{
+    font-size:1.6rem;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+a:hover{
+    font-weight: bold;
+}
+button{
+    border:none;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    cursor:pointer;
+   box-shadow: 8px 5px 10px 1px rgb(0 0 0 / 50%);
+    background-color: #f7e8f5;
+}
+.logo{
+    display: block;
+    margin:auto;
+}
+td{
+    font-weight: bold;
+}
+.checkout-sum{
+    font-weight: bold!important;
+}
+#checkout td{
+    font-weight: normal;
+}
+
+.go-to-product-btn{
+    background-color: #f7e8f5;
+    padding:0.5rem;
+    max-width:200px;
+    color:white;
+    margin:1rem auto;
+    border-radius:10px;
+    display: block;
+    box-shadow: 8px 5px 10px 1px rgb(0 0 0 / 50%);
+}
+
+.go-to-product-btn:hover{
+    background-color: #262325;
+color:white;
+}
+
+.go-to-product-btn > a{
+    text-decoration: none;
+    padding:2rem;
+    color:black;
+}
+
+.go-to-product-btn > a:hover{
+    color:white;
+}
+/*Reklammeddelandet längst upp*/
+.reklam {
+    background-color: #FFD1F9;
+    color: black;
+    text-align: center;
+    padding:1rem;
+}
+
+/*Navigering*/
+.hamburger-icon {
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+    display:block;
+    position:absolute;
+    top:1.5rem;
+    left:0;
+}
+.nav-ul {
+    display:none;
+    width:100%;
+    padding-left:0;
+    height:auto;
+}
+.nav-ul.show{ 
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    line-height:2;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav li {
+    border-bottom: 1px solid #D3ADCD;
+    padding: 3%;
+    margin-top:2%;
+    margin-left:5%;
+    margin-right:10%;
+}
+nav i {
+    color:white;
+}
+.active {
+    font-weight:bold;
+}
+.cart i {
+    position:absolute;
+    top:2rem;
+    right:3rem;
+}
+.cart-flex{
+    display: block;
+    margin:auto;
+}
+
+#cart-section > h1{
+    text-align: center;
+}
+
+#cart-section{
+    background-color: white;
+}
+.pay-flex h2{
+    text-align: center;
+}
+
+
+
+.heart i {
+    position:absolute;
+    top:2.3rem;
+    right:4rem;
+}
+
+#buy-button{
+    padding:2rem;
+    max-width:500px;
+    width:50vw;
+    margin: 3rem auto;
+    display: block;
+}
+#buy-button:hover{
+    color:#f7e8f5;
+    background-color: #262325;
+    font-weight: bold;
+}
+
+#empty-basket{
+    background-color: #f7e8f5;
+    box-shadow: 8px 5px 10px 1px rgb(0 0 0 / 50%);
+    padding: 2rem;
+    max-width: 200px;
+    width: 50vw;
+    margin: 5rem auto;
+    display: block;
+}
+
+#empty-basket:hover{
+        color:#f7e8f5;
+    background-color: #262325;
+    font-weight: bold;
+}
+
+/*About sida*/
+
+#about-section {
+    max-width:1200px;
+    width:100%;
+    display: block; 
+    margin: auto;
+    background-image: url(images/bakgrund.png);
+background-repeat: repeat;
+}
+#about-section > h1{
+    text-align: center;
+}
+
+
+#about-flex > article{
+    background-color: white;
+    padding:2%;
+}
+#about-flex img{
+    border-radius:50%;
+    display: block;
+    margin:auto;
+}
+
+#about-flex > div{
+    margin:3rem;
+}
+
+
+
+/*Sökruta*/
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin:1.5rem auto;
+    max-width:300px;
+}
+
+.search input {
+  width: 100%;
+  border: 3px solid #FFD1F9;
+  border-right: none;
+  padding: 0.4rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.search i {
+color:black;
+}
+.searchButton{
+  width: 40px;
+  border: 1px solid #f7e8f5;
+  background-color: #f7e8f5;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Startsidan*/
+
+/*Stora bilden på startsidan*/
+#index-h1{
+    text-align: center;
+}
+
+.start-p{
+    text-align: center;
+    font-size:1.8rem;
+    font-weight: 800;
+    margin-bottom:4rem;
+
+}
+.hero-image{
+position: relative;
+
+}
+.hero-image  img{
+    display: block;
+margin:auto;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: black;
+font-family: 'Montserrat', Helvetica, sans-serif; 
+color:black;
+padding:2%;
+background: rgba(247, 244, 244, 0.911)
+}
+
+.hero-text p{
+    font-size:1.6rem;
+}
+
+.hero-text h2{
+    font-size:1.8rem;
+    margin-bottom:0;
+    padding-top:0;
+}
+.hero-text > a{
+    color:white;
+    background-color: #262325;
+    padding:1rem;
+    text-decoration: none;
+}
+  
+#index-section {
+    background-color: white;
+    padding:2%;
+    display: block;
+    margin: 0 auto;
+    margin-top:2rem;
+    max-width:1300px;
+    width:100%;
+}
+
+.buy-button{
+    width:150px;
+    border:none;
+}
+
+.flex-background{
+    background-color: #f7e8f5;
+    margin-top:0;
+}
+
+.flex{
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.flex div{
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom:2rem;
+    padding:2rem;
+}
+#best-sellers{
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+#best-sellers h2{
+    text-align: center;
+    margin-bottom:4rem;
+}
+
+.add-to-basket{
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+    padding:2rem;
+    max-width:200px;
+    width:50vw;
+    margin: 3rem auto;
+    display: block;
+    color:white;
+    background-color:#262325;
+}
+
+
+.add-to-basket:hover{
+    background-color:#f7e8f5;
+    color:black;
+}
+
+/*Varukorgen på enskilda produkter*/
+
+#basket{
+    padding-left:0; 
+}
+#basket li{
+    margin-top:2rem;
+    border-bottom:1px solid #262325;
+}
+
+.basket-holder{
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+    display: block; 
+    margin: auto;
+    padding:2%;
+    max-width:500px;
+    width:100%;
+}
+
+.basket-holder > a{
+    color:black;
+}
+.sum{
+    font-size: 1.6rem;
+    font-weight: bold;
+font-family: 'Lato', Helvetica, sans-serif;
+border: none !important;
+}
+
+.description {
+    width:100%; 
+    background-color: white;
+    padding:2%;
+    margin-top:0;
+}
+.description > p{
+    max-width:500px;
+    width:100%;
+}
+
+.select-antal label, select{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    padding:2%;
+}
+/*Footer*/
+.main-footer{
+    background-color: #262325;
+    color:white;
+    text-align: center;
+    padding:2%;
+    margin-top:1rem;
+    width:100%;
+}
+.main-footer ul{
+    padding-left:0;
+}
+.secondary-footer{
+    background-color: #FFD1F9;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.product{
+    background-color: #FFD1F9;
+    display:flex;
+    margin-bottom:2rem;
+    padding-bottom:5%;
+}
+.product-flex  h1{
+    padding:2%;
+}
+
+label{
+    font-size: 1.6rem;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+.remove-btn{
+    background-color: transparent;
+    border:none;
+    position:absolute;
+    right:0;
+}
+.price{
+    position:absolute;
+    right:5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+.collapsible {
+    background-color: #262325;
+    color:white;
+    border:none;
+    width:90vw;
+    padding:2rem;
+    display:block;
+    margin: 2rem auto;
+}
+
+.content{
+    display: none;
+}
+.content input[type="text"]{
+    padding:2%;
+    display:block;
+    margin:0.5rem auto;
+    max-width:800px;
+    width:90vw;
+}
+
+#radio-form input[type="radio"]{
+   margin-bottom:2rem;
+   margin-left:3rem;
+   margin-top:2rem;
+}
+
+/*Kassan*/
+
+#cart{
+    padding:3%;
+}
+td{
+    font-size:1.4rem;
+font-family: 'Lato', Helvetica, sans-serif;
+}
+
+fieldset{
+    border:none;
+}
+
+/*Sidan med alla produkter*/
+
+video{
+    display:block;  
+    margin: 0 auto;
+    max-width:100%;
+}
+
+#video h3{
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+#video{
+    max-width:100%;
+    flex-direction: row;
+    background-color: white;
+    padding:2rem;
+}
+.productsection h1{
+    text-align: center;
+    }
+
+    .products-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    #products-img{
+        background-image: url(images/bakgrund.jpg);
+        background-repeat: repeat-x;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top:0;
+    }
+    
+    #products-img  img{
+        display: block;
+        margin: auto;
+        padding:2%;
+    }
+    
+
+.producth2{
+    font-size:1.8rem;
+    padding-left:3%;
+}
+.products-section a{
+    color: black;
+}
+.produkt{
+    padding:1%;
+    margin: 2rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.produkt > p{
+padding-left:3%;
+}
+.all-products{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:2rem;
+}
+.product-flex > p{
+max-width:500px;
+width:100%;
+}
+
+
+/*Olika typer av parfymer*/
+.fruity{
+    color: rgb(0, 73, 0);
+    font-weight: bold;
+}
+.spicy{
+    color: rgb(139, 4, 4);
+    font-weight: bold; 
+}
+.flower{
+    color: rgb(109, 3, 73);
+    font-weight: bold;
+}
+.orient{
+    color: rgb(66, 42, 35);
+    font-weight: bold;  
+}
+
+/*Media quiries för tablets*/
+@media screen and (min-width: 500px){
+
+    td{
+        padding:2rem;
+        font-size:1.6rem;
+    
+    }
+    .hero-text{
+        position:absolute;
+        top:20%;
+    }
+}
+/*Media quiries för stora skärmar*/
+@media screen and (min-width: 767px) {
+.mobile-nav{
+    display: none;
+}
+
+.description{
+    width:40%;
+    padding:3%;
+    margin-left:5rem;
+    background-color: #f7e8f5;
+    height:50%;
+    margin-top:0;
+}
+.desktop-nav{
+    display: block;
+    padding:1%;
+}
+
+.hero-text{
+    background-color: transparent;
+    font-size:3rem;
+    padding:2%;
+    background: none;
+}
+
+/*Menyn för desktop*/
+.nav-ul.show{
+    display:none;
+}
+.desktop-ul{
+    display:block;
+    margin-left:20%;
+}
+.desktop-nav li{
+    display: inline;
+    border:none;
+    margin:auto;
+}
+.logo-desktop{
+    position:absolute;
+    left:2%;
+    top:1.8rem;
+}
+.cart-desktop i{
+    position:absolute;
+    top:2.5rem;
+    right:2%;
+}
+.search-desktop{
+    width: 100%;
+    position: absolute;
+    top:1rem;
+    right:20%;
+    display: flex;
+    margin:1.5rem auto;
+    max-width:100px;
+}
+
+.search-desktop input{
+    border: 3px solid #FFD1F9;
+    border-right: none;
+    max-width:150px;
+}
+.search-desktop  i{
+    color:black;
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+}
+.main-footer > div{
+    padding:2%;
+    flex:50%;
+}
+
+.left-spalt{
+    margin-left:2rem;
+    background-color: #f7e8f5;
+    padding:2%;
+}
+.left-spalt > ul{
+    padding-left:0;
+}
+.left-spalt li{
+    margin-top:1.5rem;
+    background-color: white;
+    padding:1rem;
+    border-radius:5px;
+}
+.left-spalt a{
+    text-decoration: none;
+}
+.cart-flex{
+    display: flex;
+    flex-direction: row;
+    background-color:#f7e8f5;
+    max-width:100%;
+    padding:2%;
+}
+
+.cart-flex > div{
+    margin:1%;
+}
+
+.vara-flex{
+    width:70%;
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+    background-color: white;
+    padding-left:0.5rem;
+}
+.pay-flex{
+    width:30%;
+    background-color: white;
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+}
+
+
+td{
+    padding:2rem;
+    font-size:1.6rem;
+
+}
+#buy-button{
+    max-width:200px;
+}
+.product-section{
+    padding:2%;
+    background-color: #f7e8f5;
+    margin:1.5rem auto;
+    max-width:1400px;
+}
+.product-flex{
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+    padding:2%;
+    background-color: white;
+    display: flex;
+}
+
+.product-flex > div{
+    margin:2rem;
+}
+.product-flex > p{
+    padding:2%;
+}
+
+.basket-holder{
+    box-shadow: 8px 5px 10px 1px rgba(0,0,0,0.5);
+    padding:5%;
+    background-color: white;
+}
+
+.collapsible{
+    max-width:400px;
+    width:100%;
+    margin-bottom:1rem;
+}
+.content input[type="text"]{
+    padding:2%;
+    display:block;
+    margin:0.5rem auto;
+    max-width:400px;
+    width:100%;
+}
+/* About-sida*/
+#about-flex{
+    display:flex;
+    justify-content: center;
+}
+#about-flex > article{
+    max-width:500px;
+    border:3px solid black;
+}
+#cart-section{
+    background-color: #f7e8f5;
+}
+}

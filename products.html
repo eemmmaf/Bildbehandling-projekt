@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!--Faviconer-->
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  <title>Emmas Beauty</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <!--Reklammeddelande längst upp-->
+    <div class="reklam"><span>30% Rea på hela sortimentet med rabattkoden Sale30!</span></div>
+
+
+    <!--Navigering för skärmar upp till 700px-->
+    <nav class="mobile-nav">
+      <a href="index.html"> <img src="Logga.svg" class="logo" alt="logotyp" width="163" height="40"></a>
+      <button class="hamburger-icon" id="hamburger-icon"><i class="fas fa-bars"></i></button>
+
+      <ul class="nav-ul" id="nav-ul">
+        <li><a href="index.html">Startsida</a></li>
+        <li class="active"><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Varukorg -->
+      <div class="cart"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+
+      <!-- Sökruta -->
+      <div class="search">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!--Navigering för desktop-->
+    <nav class="desktop-nav">
+      <a href="index.html"> <img src="Logga.svg" class="logo-desktop" alt="logotyp" width="163" height="40"></a>
+      <ul class="desktop-ul">
+        <li class="active"><a href="index.html">Startsida</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="about.html">Om oss</a></li>
+      </ul>
+      <!-- Sökruta -->
+      <div class="search-desktop">
+        <input type="text" placeholder="sök" class="search-bar">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <!-- Varukorg -->
+      <div class="cart-desktop"> <a href="cart.html"> <i class="fas fa-shopping-cart fa-sm"></i></a></div>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section class="productsection">
+      <h1>Alla produkter</h1>
+      <div class="all-products">
+        <!--Produkt-->
+        <article class="produkt">
+          <picture>
+            <source srcset="images/perfect-200.png" media="(min-width: 600px)">
+            <source srcset="images/perfect-600.avif" type="image/avif">
+            <source srcset="images/perfect-600.webp" type="image/webp">
+            <img src="images/perfect-600.png" alt="Ljusrosa flaska med Rituals parfym" />
+          </picture>
+          <h2 class="producth2">Marc Jacobs</h2>
+          <p>Perfect Eau de Parfum<br><span class="fruity">Fruktig doft</span><br>700kr</p>
+          <div class="go-to-product-btn"><a href="product-perfect.html">Gå till produkten</a></div>
+        </article>
+
+        <!--Produkt-->
+        <article class="produkt">
+          <picture>
+            <source srcset="images/fleurs-200.png" media="(min-width: 600px)">
+            <source srcset="images/fleurs-600.avif" type="image/avif">
+            <source srcset="images/fleurs-600.webp" type="image/webp">
+            <img src="images/fleurs-600.png" alt="Ljusrosa flaska med Rituals parfym" />
+          </picture>
+          <h2 class="producth2">Rituals</h2>
+          <p>Fleurs de l’Himalaya 60 ml<br> <span class="flower">Blommig doft</span><br>465kr</p>
+          <div class="go-to-product-btn"><a href="product-fleurs.html">Gå till produkten</a></div>
+        </article>
+
+
+        <!--Produkt-->
+        <article class="produkt">
+          <picture>
+            <source srcset="images/paris-200.png" media="(min-width: 600px)">
+            <source srcset="images/paris-600.avif" type="image/avif">
+            <source srcset="images/paris-600.webp" type="image/webp">
+            <img src="images/paris-600.png" alt="Ljusrosa flaska med Rituals parfym" />
+          </picture>
+          <h2 class="producth2">Yves Saint Laurent</h2>
+          <p>Paris<br><span class="spicy">Kryddig doft</span><br>789kr</p>
+          <div class="go-to-product-btn"><a href="productpage3.html">Gå till produkten</a></div>
+        </article>
+
+
+        <!--Produkt-->
+        <article class="produkt">
+          <picture>
+            <source srcset="images/escada-200.png" media="(min-width: 600px)">
+            <source srcset="images/escada-600.avif" type="image/avif">
+            <source srcset="images/escada-600.webp" type="image/webp">
+            <img src="images/escada-600.png" alt="Ljusrosa flaska med Rituals parfym" />
+          </picture>
+          <h2 class="producth2">Escada</h2>
+          <p>Miami Blossom<br><span class="fruity">Fruktig doft</span><br>640kr</p>
+          <div class="go-to-product-btn"><a href="product-escada.html">Gå till produkten</a></div>
+        </article>
+
+
+        <!--Produkt-->
+        <article class="produkt">
+          <picture>
+            <source srcset="images/rituals-200.png" media="(min-width: 600px)">
+            <source srcset="images/rituals-600.avif" type="image/avif">
+            <source srcset="images/rituals-600.webp" type="image/webp">
+            <img src="images/rituals-600.png" alt="Ljusrosa flaska med Rituals parfym" />
+          </picture>
+          <h2 class="producth2">Rituals</h2>
+          <p>Eau des Indes<br><span class="orient">Orientalisk doft</span><br>430kr</p>
+          <div class="go-to-product-btn"><a href="product-rituals.html">Gå till produkten</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!--Footer-->
+  <footer class="main-footer">
+    <div>
+      <h2>Länkar</h2>
+      <ul>
+        <li><a href="about.html">Om Emmas Beauty</a></li>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="cart.html">Varukorgen</a></li>
+      </ul><br>
+    </div>
+
+    <div>
+      <h2>Kontakta oss</h2>
+      <a href="mailto:emfo2102@student.miun.se"><i
+          class="far fa-envelope fa-lg"></i><br>emfo2102@student.miun.se</a><br><br><br>
+      <br><i class="fas fa-phone-alt fa-2x"></i>
+      <p>076 101 54 74</p>
+    </div>
+  </footer>
+  <footer class="secondary-footer"><span>Emma Forslund, emfo2102@student.miun.se</span></footer>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/95698cec21.js" crossorigin="anonymous"></script>
+  <!--Main-JS-->
+  <script src="main.js"></script>
+</body>
+
+</html>
+<!--Slut på dokumentet-->
