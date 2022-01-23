@@ -8,8 +8,8 @@ Detta repo innehåller:
 * 1 CSS-dokument
 * 1 JavaScript-dokument
 
-## Hur jag har gått tillväga
-Detta repo innehåller de filer som användes för att skapa projektet i kursen **Digital bildbehandling för webb**. 
+## Om repot
+Detta repo innehåller de filer som användes för att skapa projektet i kursen **Digital bildbehandling för webb**. De har alla förts över med hjälp av kommandoprompten. 
 
 ### Klona detta repository
 Om ni vill klona detta repository använder ni kommandot **git clone** och använder länken https://github.com/eemmmaf/Bildbehandling-projekt.git.
